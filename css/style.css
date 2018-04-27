@@ -1,5 +1,4 @@
 html{
-  background-color: blue;
   width:100%;
   height:100%;
 }
@@ -11,14 +10,12 @@ body{
   font-family :'나눔고딕', 'Malgun Gothic', sans-serif;
 }
 a{
-  color: white;
-  list-style: none;
   text-decoration: none;
 }
 #header{
   top: 0;
   left: 0;
-  background-image: url('../images/바_02.png');
+  background-image: url('../images/바_04.png');
   width: 100%;
   height: 140px;
   position: fixed;
@@ -36,39 +33,58 @@ a{
   width: 160px;
   height: 60px;
 }
-#header ul{
-  margin-left: 320px;
-  position: fixed;
+#gnb{
+  margin-top: 60px;
   margin-bottom: 0;
-  padding:0;
-  float: left;
-  width: 1600px;
-  height:90px;
+  margin-left: auto;
+  margin-right: auto;
+  width:1500px;
+  line-height: 70px;
 }
-#header ul li{
-  color: #ffffff;
-  font-weight: 600;
-  margin-top: 70px;
-  font-size: 17px;
-  float: left;
-  width: 150px;
-  height: 20px;
-  display: inline-block;
-  vertical-align: bottom;
-  line-height: 20px;
+#gnb ul li{
+  float:left;
+  width: 130px;
+  color: rgb(63,63,63);
+  list-style: none;
 }
-aside{
-  background-color: #343434;
-  color: #343434;
-  position: fixed;
-  width: 320px;
-  top: 140px;
-  bottom: 0;
-  left: 0;
+#gnb ul li a{
+   text-align: center;
+   color:rgb(63,63,63);
+   font-weight:600;
+   display:block;
+ }
+#gnb ul li dl.drop-down{
+  margin-top: 10px;
+  border:1px #ccc solid;
+  background:rgb(249,249,249);
+  display:none;
 }
-.submenu{
-  display: none;
+#gnb ul li dl.drop-down dd{
+  width: 129px;
+  height:40px;
+  line-height:40px;
 }
-#header ul li:hover .submenu{
-  displayLblock;
+#gnb ul li dl.drop-down a{
+   font-size: 14px;
+   font-weight: lighter;
+   color:rgb(63,63,63);
+   }
+#gnb ul li dl.drop-down a:hover{
+   background:rgb(181,181,181);
+   color:rgb(63,63,63);
+  }
+#gnb ul li.menu3:hover .drop-down{
+  display:block;
+}
+#gnb ul li.menu4:hover .drop-down{
+  display:block;
+}
+#gnb ul li.menu5:hover .drop-down{
+  display:block;
+}
+#gnb ul li.menu6:hover .drop-down{
+  display:block;
+}
+#gnb ul li.menu7:hover .drop-down{
+  display:block;
 }
